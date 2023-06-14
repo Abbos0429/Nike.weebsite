@@ -24,25 +24,33 @@
   font-family: "Futura XBlkCnIt BT";
   src: url(../fonts/futura_xblkcnit_bt/FuturaExtraBlackCondensedItalicBT.ttf);
 }
+@font-face {
+  font-family: "Futura Hv BT";
+  src: url(../fonts/futura_hv_bt/FuturaHeavyBT.ttf);
+}
+@font-face {
+  font-family: "Futura LT";
+  src: url(../fonts/miketvargasfutura-lt/FuturaLT.ttf);
+}
 .container {
   z-index: 1;
   width: 100%;
   border: 1px solid red;
 }
-.container .section_one {
+.container main .section_one {
   position: relative;
   width: 100%;
   z-index: 3;
   background: url(../Image/Background.png);
   background-repeat: no-repeat;
 }
-.container .section_one .section_one_back {
+.container main .section_one .section_one_back {
   z-index: -1;
   position: absolute;
   top: 19%;
   left: 5%;
 }
-.container .section_one .section_one_back h1 {
+.container main .section_one .section_one_back h1 {
   font-family: "Futura-Black";
   font-style: normal;
   font-weight: 700;
@@ -54,31 +62,31 @@
   background-clip: text;
   background-blend-mode: hard-light;
 }
-.container .section_one header {
+.container main .section_one header {
   padding: 2% 1%;
   display: flex;
   justify-content: space-between;
 }
-.container .section_one header .header_left {
+.container main .section_one header .header_left {
   display: flex;
   justify-content: flex-start;
   gap: 44px;
 }
-.container .section_one header .header_left button {
+.container main .section_one header .header_left button {
   background: none;
   border: none;
   width: 48px;
   height: 24px;
 }
-.container .section_one header .header_left nav ul {
+.container main .section_one header .header_left nav ul {
   display: flex;
   justify-content: flex-start;
   gap: 35px;
 }
-.container .section_one header .header_left nav ul li {
+.container main .section_one header .header_left nav ul li {
   list-style-type: none;
 }
-.container .section_one header .header_left nav ul li a {
+.container main .section_one header .header_left nav ul li a {
   position: relative;
   font-family: "Futura Bk BT";
   font-style: normal;
@@ -89,7 +97,7 @@
   color: #ffffff;
   text-decoration: none;
 }
-.container .section_one header .header_left nav ul li a::before {
+.container main .section_one header .header_left nav ul li a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -101,86 +109,86 @@
   transform-origin: left;
   transition: all 0.4s;
 }
-.container .section_one header .header_left nav ul li a:hover::before {
+.container main .section_one header .header_left nav ul li a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
-.container .section_one header .header_box {
+.container main .section_one header .header_box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 490px;
 }
-.container .section_one header .header_box .header_logo {
+.container main .section_one header .header_box .header_logo {
   width: 80px;
   height: 31px;
 }
-.container .section_one header .header_box .header_logo img {
+.container main .section_one header .header_box .header_logo img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container .section_one header .header_box .header_button {
+.container main .section_one header .header_box .header_button {
   display: flex;
   justify-content: center;
   gap: 45px;
 }
-.container .section_one header .header_box .header_button button {
+.container main .section_one header .header_box .header_button button {
   background: none;
   transition: all 0.4s;
   cursor: pointer;
   border: none;
 }
-.container .section_one header .header_box .header_button button:hover svg {
+.container main .section_one header .header_box .header_button button:hover svg {
   transform: scale(1.2);
 }
-.container .section_one header .header_box .header_button button:hover svg g path {
+.container main .section_one header .header_box .header_button button:hover svg g path {
   fill: red;
 }
-.container .section_one .section_one_item {
+.container main .section_one .section_one_item {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
   padding-right: 112px;
 }
-.container .section_one .section_one_item .section_one_color {
+.container main .section_one .section_one_item .section_one_color {
   width: 190px;
   height: 491px;
 }
-.container .section_one .section_one_item .section_one_color img {
+.container main .section_one .section_one_item .section_one_color img {
   width: 100%;
   height: 100%;
 }
-.container .section_one .section_one_item .section_one_product {
+.container main .section_one .section_one_item .section_one_product {
   display: flex;
   justify-content: flex-end;
   gap: 90px;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_img {
+.container main .section_one .section_one_item .section_one_product .section_one_product_img {
   position: relative;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_img .section_one_product_img_item {
+.container main .section_one .section_one_item .section_one_product .section_one_product_img .section_one_product_img_item {
   margin-top: 20px;
   width: 560px;
   height: 308.11px;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_img .section_one_product_img_plus {
+.container main .section_one .section_one_item .section_one_product .section_one_product_img .section_one_product_img_plus {
   position: absolute;
   top: 40%;
   left: 38%;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_img .section_one_product_img_360 {
+.container main .section_one .section_one_item .section_one_product .section_one_product_img .section_one_product_img_360 {
   position: absolute;
   top: 90%;
   left: 8%;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info {
   margin-top: 110px;
   display: flex;
   flex-direction: column;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info h1 {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info h1 {
   font-family: "Futura Md BT";
   font-style: italic;
   font-weight: 700;
@@ -189,13 +197,13 @@
   letter-spacing: 0.16em;
   color: #ffffff;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item {
   display: flex;
   justify-content: flex-start;
   gap: 150px;
   margin-top: 32px;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item h2 {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item h2 {
   font-family: "Futura Hv BT";
   font-style: normal;
   font-weight: 400;
@@ -203,13 +211,13 @@
   line-height: 36px;
   color: #ffffff;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child {
   display: flex;
   justify-content: flex-start;
   gap: 19px;
   align-items: center;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child p {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child p {
   font-family: "Futura Bk BT";
   font-style: normal;
   font-weight: 400;
@@ -217,7 +225,7 @@
   line-height: 19px;
   color: #ffffff;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child h3 {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child h3 {
   font-family: "Futura Hv BT";
   font-style: normal;
   font-weight: 400;
@@ -225,24 +233,24 @@
   line-height: 43px;
   color: #ffffff;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child h3 span svg {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child h3 span svg {
   width: 28px;
   height: 28px;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child button {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child button {
   z-index: 3;
   background: none;
   border: none;
   transition: all 0.4s;
   cursor: pointer;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child button:hover svg {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child button:hover svg {
   transform: scale(1.2);
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child button:hover svg path {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_item .section_one_product_info_item_child button:hover svg path {
   fill: red;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button {
   border: 1px solid #ffffff;
   border-radius: 36px;
   background: none;
@@ -261,33 +269,33 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button span svg {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button span svg {
   transition: all 0.4s;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button:hover {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button:hover {
   border-color: red;
   color: red;
 }
-.container .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button:hover span svg path {
+.container main .section_one .section_one_item .section_one_product .section_one_product_info .section_one_product_info_button button:hover span svg path {
   fill: red;
 }
-.container .section_one .section_one_item_carusel {
+.container main .section_one .section_one_item_carusel {
   position: relative;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel {
+.container main .section_one .section_one_item_carusel .section_one_carusel {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 90px;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
   margin-top: 60px;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -303,27 +311,27 @@
   transition: all 0.4s;
   cursor: pointer;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button span svg {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button span svg {
   transition: all 0.4s;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button:hover {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button:hover {
   color: red;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button:hover span svg path {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_button button:hover span svg path {
   fill: red;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box {
   margin-top: 128px;
   position: relative;
   border: 2px solid #ffffff;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box h4 {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box h4 {
   font-family: "Futura LtCn BT";
   font-style: normal;
   font-weight: 400;
@@ -332,54 +340,54 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(1) {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(1) {
   padding: 120px 140px 80px 30px;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(1) .section_one_carusel_item_box_img {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(1) .section_one_carusel_item_box_img {
   width: 228px;
   height: 134px;
   position: absolute;
   top: -25%;
   left: 5%;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(2) {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(2) {
   padding: 120px 150px 80px 30px;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(2) .section_one_carusel_item_box_img {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(2) .section_one_carusel_item_box_img {
   width: 228px;
   height: 134px;
   position: absolute;
   top: -8%;
   left: 8%;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(3) {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(3) {
   padding: 120px 140px 80px 30px;
 }
-.container .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(3) .section_one_carusel_item_box_img {
+.container main .section_one .section_one_item_carusel .section_one_carusel .section_one_carusel_item .section_one_carusel_item_box:nth-of-type(3) .section_one_carusel_item_box_img {
   width: 228px;
   height: 134px;
   position: absolute;
   top: -15%;
   left: 15%;
 }
-.container .section_one .section_one_item_carusel .section_one_lables {
+.container main .section_one .section_one_item_carusel .section_one_lables {
   position: absolute;
   bottom: -28%;
   left: 0;
   width: 100%;
   height: 156.68px;
 }
-.container .section_one .section_one_item_carusel .section_one_lables img {
+.container main .section_one .section_one_item_carusel .section_one_lables img {
   width: 100%;
   height: 100%;
 }
-.container .section_two {
+.container main .section_two {
   width: 100%;
   background-color: #000;
   background-position: bottom;
   background-image: url(../Image/Vector.png);
 }
-.container .section_two .section_two_item:nth-of-type(1) {
+.container main .section_two .section_two_item:nth-of-type(1) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,12 +395,12 @@
   padding-top: 270px;
   position: relative;
 }
-.container .section_two .section_two_item:nth-of-type(1) .box2 {
+.container main .section_two .section_two_item:nth-of-type(1) .box2 {
   position: absolute;
   top: 65%;
   left: 0;
 }
-.container .section_two .section_two_item:nth-of-type(1) h1 {
+.container main .section_two .section_two_item:nth-of-type(1) h1 {
   font-family: "Futura Md BT";
   font-style: normal;
   font-weight: 400;
@@ -401,7 +409,7 @@
   text-align: center;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(1) h1 .box {
+.container main .section_two .section_two_item:nth-of-type(1) h1 .box {
   position: absolute;
   top: 40%;
   left: 49%;
@@ -412,7 +420,7 @@
   mix-blend-mode: multiply;
   transform: rotate(11.2deg);
 }
-.container .section_two .section_two_item:nth-of-type(1) p {
+.container main .section_two .section_two_item:nth-of-type(1) p {
   margin-top: 80px;
   font-family: "Futura Bk BT";
   font-style: normal;
@@ -422,7 +430,7 @@
   text-align: center;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(1) button {
+.container main .section_two .section_two_item:nth-of-type(1) button {
   border: 1px solid #ffffff;
   border-radius: 36px;
   background: none;
@@ -441,24 +449,24 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(1) button span svg {
+.container main .section_two .section_two_item:nth-of-type(1) button span svg {
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(1) button:hover {
+.container main .section_two .section_two_item:nth-of-type(1) button:hover {
   border-color: red;
   color: red;
 }
-.container .section_two .section_two_item:nth-of-type(1) button:hover span svg path {
+.container main .section_two .section_two_item:nth-of-type(1) button:hover span svg path {
   fill: red;
 }
-.container .section_two .section_two_item:nth-of-type(2) {
+.container main .section_two .section_two_item:nth-of-type(2) {
   margin-top: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.container .section_two .section_two_item:nth-of-type(2) h1 {
+.container main .section_two .section_two_item:nth-of-type(2) h1 {
   position: relative;
   font-family: "Futura Md BT";
   font-style: normal;
@@ -468,7 +476,7 @@
   text-align: center;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(2) h1 .box3 {
+.container main .section_two .section_two_item:nth-of-type(2) h1 .box3 {
   position: absolute;
   top: 0;
   left: 49%;
@@ -478,39 +486,39 @@
   width: 287px;
   height: 55px;
 }
-.container .section_two .section_two_item:nth-of-type(2) .section_two_item_card {
+.container main .section_two .section_two_item:nth-of-type(2) .section_two_item_card {
   margin-top: 105px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
 }
-.container .section_two .section_two_item:nth-of-type(2) .section_two_item_card .section_two_item_card_item {
+.container main .section_two .section_two_item:nth-of-type(2) .section_two_item_card .section_two_item_card_item {
   position: relative;
 }
-.container .section_two .section_two_item:nth-of-type(2) .section_two_item_card .section_two_item_card_item .section_two_item_card_item_img {
+.container main .section_two .section_two_item:nth-of-type(2) .section_two_item_card .section_two_item_card_item .section_two_item_card_item_img {
   width: 410px;
   height: 550px;
 }
-.container .section_two .section_two_item:nth-of-type(2) .section_two_item_card .section_two_item_card_item .section_two_item_card_item_img img {
+.container main .section_two .section_two_item:nth-of-type(2) .section_two_item_card .section_two_item_card_item .section_two_item_card_item_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container .section_two .section_two_item:nth-of-type(3) {
+.container main .section_two .section_two_item:nth-of-type(3) {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 170px;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_text {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_text {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_text span {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_text span {
   font-family: "Futura XBlkCnIt BT";
   font-style: italic;
   font-weight: 400;
@@ -520,49 +528,49 @@
   color: #ffffff;
   transform: rotate(-10.67deg);
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_text .box4 {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_text .box4 {
   position: absolute;
   top: 30%;
   left: 55%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_text .box5 {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_text .box5 {
   mix-blend-mode: multiply;
   position: absolute;
   top: -33%;
   left: 36%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child {
   margin-top: 140px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross {
   padding-left: 4%;
   display: flex;
   justify-content: flex-start;
   gap: 45px;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child {
   padding-top: 120px;
   position: relative;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child .section_two_item_kross_child_img {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child .section_two_item_kross_child_img {
   position: absolute;
   top: -1%;
   left: 10%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child .section_two_item_kross_child_deck {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child .section_two_item_kross_child_deck {
   width: 400px;
   height: 60px;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child .section_two_item_kross_child_deck img {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child .section_two_item_kross_child_deck img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child h5 {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child h5 {
   margin-top: 16px;
   font-family: "Futura LtCn BT";
   font-style: normal;
@@ -573,10 +581,10 @@
   color: #ffffff;
   text-align: center;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child:nth-of-type(2) .section_two_item_kross_child_img {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross .section_two_item_kross_child:nth-of-type(2) .section_two_item_kross_child_img {
   top: -17%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) {
   padding-left: 0;
   padding-right: 4%;
   margin-top: 90px;
@@ -584,44 +592,44 @@
   justify-content: flex-end;
   align-items: end;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) .section_two_item_kross_child {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) .section_two_item_kross_child {
   padding-top: 120px;
   position: relative;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) .section_two_item_kross_child .section_two_item_kross_child_img {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) .section_two_item_kross_child .section_two_item_kross_child_img {
   position: absolute;
   top: -16%;
   left: 8%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) .section_two_item_kross_child:nth-of-type(2) .section_two_item_kross_child_img {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(2) .section_two_item_kross_child:nth-of-type(2) .section_two_item_kross_child_img {
   top: -23%;
   left: 9%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) {
   padding-left: 4%;
   margin-top: 90px;
   display: flex;
   justify-content: flex-start;
   align-items: end;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) .section_two_item_kross_child {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) .section_two_item_kross_child {
   padding-top: 120px;
   position: relative;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) .section_two_item_kross_child .section_two_item_kross_child_img {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) .section_two_item_kross_child .section_two_item_kross_child_img {
   position: absolute;
   top: -14%;
   left: 10%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) .section_two_item_kross_child:nth-of-type(2) .section_two_item_kross_child_img {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_child .section_two_item_kross:nth-of-type(3) .section_two_item_kross_child:nth-of-type(2) .section_two_item_kross_child_img {
   top: 13%;
   left: 11%;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_btn {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_btn {
   display: flex;
   justify-content: center;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button {
   border: 1px solid #ffffff;
   border-radius: 36px;
   background: none;
@@ -640,26 +648,26 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button span svg {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button span svg {
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button:hover {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button:hover {
   border-color: red;
   color: red;
 }
-.container .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button:hover span svg path {
+.container main .section_two .section_two_item:nth-of-type(3) .section_two_item_btn button:hover span svg path {
   fill: red;
 }
-.container .section_two .section_two_item:nth-of-type(4) {
+.container main .section_two .section_two_item:nth-of-type(4) {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
-.container .section_two .section_two_item:nth-of-type(4) .section_two_item_info {
+.container main .section_two .section_two_item:nth-of-type(4) .section_two_item_info {
   margin-top: 24px;
 }
-.container .section_two .section_two_item:nth-of-type(4) .section_two_item_info h2 {
+.container main .section_two .section_two_item:nth-of-type(4) .section_two_item_info h2 {
   font-family: "Futura Md BT";
   font-style: normal;
   font-weight: 400;
@@ -667,7 +675,7 @@
   line-height: 77px;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(4) .section_two_item_info p {
+.container main .section_two .section_two_item:nth-of-type(4) .section_two_item_info p {
   margin-top: 24px;
   font-family: "Futura Bk BT";
   font-style: normal;
@@ -676,7 +684,7 @@
   line-height: 29px;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(4) .section_two_item_info button {
+.container main .section_two .section_two_item:nth-of-type(4) .section_two_item_info button {
   border: 1px solid #ffffff;
   border-radius: 36px;
   background: none;
@@ -695,32 +703,32 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(4) .section_two_item_info button span svg {
+.container main .section_two .section_two_item:nth-of-type(4) .section_two_item_info button span svg {
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(4) .section_two_item_info button:hover {
+.container main .section_two .section_two_item:nth-of-type(4) .section_two_item_info button:hover {
   border-color: red;
   color: red;
 }
-.container .section_two .section_two_item:nth-of-type(4) .section_two_item_info button:hover span svg path {
+.container main .section_two .section_two_item:nth-of-type(4) .section_two_item_info button:hover span svg path {
   fill: red;
 }
-.container .section_two .section_two_item:nth-of-type(5) {
+.container main .section_two .section_two_item:nth-of-type(5) {
   display: flex;
   flex-direction: column;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_text {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_text {
   display: flex;
   justify-content: flex-start;
   padding-left: 5%;
   position: relative;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_text .section_two_item_text_box {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_text .section_two_item_text_box {
   position: absolute;
   bottom: -50%;
   left: 37%;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_text h2 {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_text h2 {
   font-family: "Futura Md BT";
   font-style: normal;
   font-weight: 400;
@@ -730,22 +738,22 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_text h2 span {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_text h2 span {
   color: #ba0000;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price {
   display: flex;
   justify-content: flex-end;
   gap: 260px;
   margin-top: 144px;
   padding-right: 4%;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child {
   padding-bottom: 120px;
   position: relative;
   left: 0;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_text h5 {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_text h5 {
   font-family: "Futura XBlkCnIt BT";
   font-style: italic;
   font-weight: 400;
@@ -754,7 +762,7 @@
   text-align: right;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_text P {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_text P {
   margin-top: 14px;
   font-family: "Futura XBlkCnIt BT";
   font-style: italic;
@@ -764,32 +772,32 @@
   text-align: right;
   color: #ba0000;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_img {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_img {
   position: absolute;
   top: 25%;
   left: -60%;
   width: 240px;
   height: 145px;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_img img {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child .section_two_item_price_child_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child:nth-of-type(2) .section_two_item_price_child_img {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child:nth-of-type(2) .section_two_item_price_child_img {
   width: 235px;
   height: 145px;
   top: 20%;
   left: -50%;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child:nth-of-type(3) .section_two_item_price_child_img {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_price .section_two_item_price_child:nth-of-type(3) .section_two_item_price_child_img {
   width: 235px;
   height: 145px;
   top: 20%;
   left: -110%;
 }
-.container .section_two .section_two_item:nth-of-type(5) .section_two_item_log0 {
+.container main .section_two .section_two_item:nth-of-type(5) .section_two_item_log0 {
   margin-top: 270px;
   display: flex;
   justify-content: center;
@@ -797,18 +805,18 @@
   align-items: center;
   gap: 75px;
 }
-.container .section_two .section_two_item:nth-of-type(6) {
+.container main .section_two .section_two_item:nth-of-type(6) {
   display: flex;
   justify-content: center;
   gap: 68px;
   margin-top: 350px;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_info {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_info {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_info h2 {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_info h2 {
   font-family: "Futura Md BT";
   font-style: normal;
   font-weight: 400;
@@ -816,7 +824,7 @@
   line-height: 77px;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_info p {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_info p {
   font-family: "Futura Bk BT";
   font-style: normal;
   font-weight: 400;
@@ -825,7 +833,7 @@
   margin-top: 32px;
   color: #ffffff;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button {
   border: 1px solid #ffffff;
   border-radius: 36px;
   background: none;
@@ -844,72 +852,72 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button span svg {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button span svg {
   transition: all 0.4s;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button:hover {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button:hover {
   border-color: red;
   color: red;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button:hover span svg path {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_info .section_two_item_info_btn button:hover span svg path {
   fill: red;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_img {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_img {
   width: 240px;
   height: 400px;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_img img {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_img img {
   width: 100%;
   height: 100%;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(1) {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(1) {
   width: 320px;
   height: 160px;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(1) img {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(1) img {
   width: 100%;
   height: 100%;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(2) {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(2) {
   margin-top: 28px;
   width: 240px;
   height: 320px;
 }
-.container .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(2) img {
+.container main .section_two .section_two_item:nth-of-type(6) .section_two_item_imgs .section_two_item_imgs_box .section_two_item_imgs_img:nth-of-type(2) img {
   width: 100%;
   height: 100%;
 }
-.container .section_three {
+.container main .section_three {
   width: 100%;
   background-color: #000;
 }
-.container .section_three .section_three_item:nth-of-type(1) {
+.container main .section_three .section_three_item:nth-of-type(1) {
   padding-top: 270px;
   display: flex;
   justify-content: center;
   gap: 220px;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_img {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_img {
   width: 415px;
   height: 415px;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_img img {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info h3 {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info h3 {
   font-family: "Futura Md BT";
   font-style: normal;
   font-weight: 400;
@@ -918,10 +926,10 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info h3 span {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info h3 span {
   color: #ba0000;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info p {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info p {
   margin-top: 32px;
   font-family: "Futura Bk BT";
   font-style: normal;
@@ -931,7 +939,7 @@
   text-transform: capitalize;
   color: #ffffff;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info h6 {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info h6 {
   margin-top: 30px;
   font-family: "Futura Bk BT";
   font-style: normal;
@@ -941,10 +949,10 @@
   text-transform: capitalize;
   color: #ffffff;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info h6 span {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info h6 span {
   font-family: "Futura Hv BT";
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button {
   border: 1px solid #ffffff;
   border-radius: 36px;
   background: none;
@@ -963,24 +971,24 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button span svg {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button span svg {
   transition: all 0.4s;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button:hover {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button:hover {
   border-color: red;
   color: red;
 }
-.container .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button:hover span svg path {
+.container main .section_three .section_three_item:nth-of-type(1) .section_three_item_info .section_three_item_info_btn button:hover span svg path {
   fill: red;
 }
-.container .section_three .section_three_item:nth-of-type(2) {
+.container main .section_three .section_three_item:nth-of-type(2) {
   margin-top: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box {
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -991,7 +999,7 @@
           backdrop-filter: blur(2px);
   border-radius: 10px;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text h2 {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text h2 {
   font-family: "Futura Md BT";
   font-style: normal;
   font-weight: 400;
@@ -999,7 +1007,7 @@
   line-height: 58px;
   color: #ffffff;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text p {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text p {
   margin-top: 16px;
   font-family: "Futura Bk BT";
   font-style: normal;
@@ -1009,7 +1017,7 @@
   text-transform: capitalize;
   color: #ffffff;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button {
   border: 1px solid #ffffff;
   border-radius: 36px;
   background: none;
@@ -1028,31 +1036,222 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button span svg {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button span svg {
   transition: all 0.4s;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button:hover {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button:hover {
   border-color: red;
   color: red;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button:hover span svg path {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_text .section_three_item_box_text_btn button:hover span svg path {
   fill: red;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_img {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box .section_three_item_box_img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .section_three .section_three_item:nth-of-type(2) .section_three_item_box_child {
+.container main .section_three .section_three_item:nth-of-type(2) .section_three_item_box_child {
   position: absolute;
   bottom: -63%;
   right: -15.7%;
   width: 798px;
   height: 376px;
 }
-.container .section_four {
+.container main .section_four {
   padding-top: 300px;
+  padding-bottom: 80px;
   background: #000000;
+}
+.container main .section_four .section_four_first {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.container main .section_four .section_four_first .section_four_first_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container main .section_four .section_four_first .section_four_first_item .section_four_first_item_svg button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.container main .section_four .section_four_first .section_four_first_item .section_four_first_item_svg button span svg {
+  transition: all 0.5s;
+}
+.container main .section_four .section_four_first .section_four_first_item .section_four_first_item_svg button:hover span svg {
+  transform: scale(1.2);
+}
+.container main .section_four .section_four_first .section_four_first_item .section_four_first_item_svg button:hover span svg path {
+  fill: #ba0000;
+}
+.container main .section_four .section_four_first .section_four_first_item .section_four_first_item_text h4 {
+  font-family: "Futura Hv BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.container main .section_four .section_four_first .section_four_first_item .section_four_first_item_text p {
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: capitalize;
+  margin-top: 8px;
+  color: #ffffff;
+}
+.container main .section_four .section_four_last {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 190px;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) h1 {
+  font-family: "Futura LT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) form {
+  margin-top: 32px;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) form label {
+  border: 1px solid #ffffff;
+  border-radius: 80px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) form label input {
+  font-size: 16px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) form label input::-moz-placeholder {
+  font-family: "Futura LT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) form label input::placeholder {
+  font-family: "Futura LT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) form label button {
+  background: #ffffff;
+  border-radius: 80px;
+  font-family: "Futura LT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: all 0.4s;
+  border: 1px solid #fff;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) form label button:hover {
+  background: none;
+  color: #fff;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) .section_four_last_item_img {
+  width: 240px;
+  height: 125px;
+  margin-top: 88px;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(1) .section_four_last_item_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(2) .section_four_last_item_box .section_four_last_item_box_top h2 {
+  font-family: "Futura XBlkCnIt BT";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  padding-bottom: 8px;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(2) .section_four_last_item_box .section_four_last_item_box_top p {
+  font-family: "Futura LtCn BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 16px;
+  color: #ffffff;
+}
+.container main .section_four .section_four_last .section_four_last_item:nth-of-type(2) .section_four_last_item_box .section_four_last_item_box_top:nth-of-type(2) {
+  margin-top: 51px;
+}
+.container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+  background: #000;
+}
+.container footer p {
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.container footer .footer_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.container footer .footer_button button {
+  border: none;
+  background: none;
+}
+.container footer .footer_button button span svg path {
+  transition: all 0.5s;
+}
+.container footer .footer_button button:hover span svg {
+  transform: scale(1.2);
+}
+.container footer .footer_button button:hover span svg path {
+  fill: #ba0000;
 }
 @media screen and (min-width: 1440px) {
   .container {
